@@ -1,37 +1,22 @@
-## Welcome to GitHub Pages
+## MathMax Universidad Central
+### Calculadora de Funciones
+*Autores*: _Karen Pulido, Nicolle Murcia, Mateo Ruíz, Miguel Camargo, Jorge Pastran y Carlos Trujillo_
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/NXELb4ACFAg/0.jpg)](https://www.youtube.com/watch?v=NXELb4ACFAg)
 
-You can use the [editor on GitHub](https://github.com/MathMaxUC/calmatuc/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Esta es una calculadora de funciones que le permitirá realizar operaciones de Mátematicas Básicas, Cálculo, Álgebra Linea,  Estadística y Cálculo Vectorial.aren Pulido, Nicolle Murcia, Mateo Ruíz, Miguel Camargo, Jorge Pastran y Carlos Trujillo
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MathMaxUC/calmatuc/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- Funciones
+  Ingrese las funciones e formato Sympy
+  Por ejemplo para ingresar
+  $𝑥2$
+  escriba x**2.
+  Chequee el botón de graficar si desea que aparezca la gráfica de la función
+- Matrices
+  Escriba las matrices en formato Sympy, por ejemplo la matriz de 2x3
+  [[1,2,3],[4,5,6]].
+- Puntos y Vectores
+  Los puntos y vectores deben ser escritos como tuplas
+  Por ejemplo el punto (2,3) o el vector (5,7).
+  Estadística
+  Ingrese las listas de datos numÃ©ricos separadas por coma
+ Por ejemplo lista1 = 1,2,3,4,5.
