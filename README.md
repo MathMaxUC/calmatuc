@@ -1,6 +1,5 @@
 ## MathMax Universidad Central
 ### Calculadora de Funciones
-*Autores*: _Karen Pulido, Nicolle Murcia, Mateo Ruíz, Miguel Camargo, Jorge Pastran y Carlos Trujillo_
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/NXELb4ACFAg/0.jpg)](https://www.youtube.com/watch?v=NXELb4ACFAg)
 
