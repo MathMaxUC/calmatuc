@@ -1,6 +1,7 @@
 ## MathMax Universidad Central
 ### Calculadora de Funciones
 *Autores*: _Karen Pulido, Nicolle Murcia, Mateo Ruíz, Miguel Camargo, Jorge Pastran y Carlos Trujillo_
+
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/NXELb4ACFAg/0.jpg)](https://www.youtube.com/watch?v=NXELb4ACFAg)
 
 Esta es una calculadora de funciones que le permitirá realizar operaciones de Mátematicas Básicas, Cálculo, Álgebra Linea,  Estadística y Cálculo Vectorial.aren Pulido, Nicolle Murcia, Mateo Ruíz, Miguel Camargo, Jorge Pastran y Carlos Trujillo
@@ -8,7 +9,7 @@ Esta es una calculadora de funciones que le permitirá realizar operaciones de M
 - Funciones
   Ingrese las funciones e formato Sympy
   Por ejemplo para ingresar
-  $𝑥2$
+  ${𝑥^2}$
   escriba x**2.
   Chequee el botón de graficar si desea que aparezca la gráfica de la función
 - Matrices
@@ -19,4 +20,4 @@ Esta es una calculadora de funciones que le permitirá realizar operaciones de M
   Por ejemplo el punto (2,3) o el vector (5,7).
   Estadística
   Ingrese las listas de datos numÃ©ricos separadas por coma
- Por ejemplo lista1 = 1,2,3,4,5.
+  Por ejemplo lista1 = 1,2,3,4,5.
