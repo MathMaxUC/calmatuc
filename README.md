@@ -1,9 +1,11 @@
 ## MathMax Universidad Central
 ### Calculadora de Funciones
 
+*Autores*: _Karen Pulido, Nicolle Murcia, Mateo Ruíz, Miguel Camargo, Jorge Pastran y Carlos Trujillo_
+
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/NXELb4ACFAg/0.jpg)](https://www.youtube.com/watch?v=NXELb4ACFAg)
 
-Esta es una calculadora de funciones que le permitirá realizar operaciones de Mátematicas Básicas, Cálculo, Álgebra Linea,  Estadística y Cálculo Vectorial.aren Pulido, Nicolle Murcia, Mateo Ruíz, Miguel Camargo, Jorge Pastran y Carlos Trujillo
+Esta es una calculadora de funciones que le permitirá realizar operaciones de Mátematicas Básicas, Cálculo, Álgebra Linea,  Estadística y Cálculo Vectorial.
 
 - Funciones
   Ingrese las funciones e formato Sympy
