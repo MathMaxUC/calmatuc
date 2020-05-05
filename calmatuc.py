@@ -4,6 +4,7 @@ from __future__ import print_function
 import sympy as spp
 import numpy as np
 import re
+import pkgutil
 import matplotlib.pyplot as plt
 from pylab import meshgrid,cm,imshow,contour,clabel,colorbar,axis,title,show
 from mpl_toolkits.mplot3d import Axes3D
@@ -20,8 +21,8 @@ import ipywidgets as widgets
 # Establece las variables globales
 # Código HTML para la pestaña de instrucciones 
 instructions_html = None 
-with open('instructions.html', 'r') as file:
-    instructions_html = file.read()
+data = pkgutil.get_data(__name__, "instructions.html")
+instructions_html = data.decode('utf-8')
 
 __DEBUG__ = False
 
@@ -70,7 +71,7 @@ def GraficarFuncion(funciones, estilo):
             print(traceback.format_exc())
         else:
             print("La función no se puede graficar")
-
+    
 ##############################################################
 # Derivar
 # Función que recibe función expresada en Sympy y calcula
@@ -124,7 +125,7 @@ def CalcularRaices(funcion):
             print(traceback.format_exc())
         else:
             print("No se pueden calcular las raices de la función")
-
+            
 ##############################################################
 # factorial
 # Función que calcula el factoria de un número dado
@@ -135,7 +136,7 @@ def factorial(n):
         return 1
     else:
         return n * factorial(n - 1)
-
+    
 ##############################################################
 # taylor
 # Función que recibe función expresada en Sympy y calcula
@@ -326,7 +327,7 @@ def InteractCalcularRaices(funcion, graficar, estilo):
             print(traceback.format_exc())
         else:
             print("No se puede realizar la operación.")        
-
+                   
 ##############################################################
 # InteractMaxMin
 # Función que maneja el interact para la operación máximos
@@ -385,7 +386,7 @@ def InteractMaxMin(funcion,graficar,estilo):
             print(traceback.format_exc())
         else:
             print("No se puede realizar la operación.")        
-
+        
 ##############################################################
 # InteractLims
 # Función que maneja el interact para la operación límites.
@@ -413,7 +414,7 @@ def InteractLims(funcion,variable,tiende):
             print(traceback.format_exc())
         else:
             print("No se puede realizar la operación.")        
-
+        
 ##############################################################
 # InteractTaylor
 # Función que maneja el interact para la Serie de Taylor
@@ -455,7 +456,7 @@ def InteractInversaAL(mat):
             print(traceback.format_exc())
         else:
             print("La matriz no es invertible.")
-
+        
 ##############################################################
 # InteractDeterminanteAL
 # Función que maneja el interact para la operación determinante.
@@ -479,7 +480,7 @@ def InteractDeterminanteAL(mat):
             print(traceback.format_exc())
         else:
             print("No se puede calcular el determinante de la matriz.")
-
+            
 ##############################################################
 # InteractMEAL
 # Función que maneja el interact para la operación multiplicar
@@ -505,7 +506,7 @@ def InteractMEAL(mat,escalar):
             print(traceback.format_exc())
         else:
             print("No se puede multiplicar la matriz.")
-
+        
 ##############################################################
 # InteractMultAL
 # Función que maneja el interact para la operación multiplicar
@@ -532,7 +533,7 @@ def InteractMultAL(mat1,mat2):
             print(traceback.format_exc())
         else:
             print("No se pueden multiplicar las matrices.")
-
+                
 ##############################################################
 # InteractCruzAL
 # Función que maneja el interact para la operación producto
@@ -561,7 +562,7 @@ def InteractCruzAL(mat1,mat2):
             print(traceback.format_exc())
         else:
             print("No se pueden realizar el producto cruz.")
-
+                
 ##############################################################
 # InteractSumaAL
 # Función que maneja el interact para la operación suma
@@ -612,7 +613,7 @@ def InteractTranspAL(mat1):
             print(traceback.format_exc())
         else:
             print("No se pueden realizar la operación.")
-
+            
 ##############################################################
 # InteractVectAL
 # Función que grafica vectores en 2D
@@ -628,7 +629,7 @@ def InteractVectAL(mat1):
             print(traceback.format_exc())
         else:
             print("No se pueden realizar la operación.")
-
+            
 ##############################################################
 # InteractRGJ
 # Función que maneja el interact para la reducción Gauss-Jordan
@@ -687,7 +688,7 @@ def InteractPtoPendiente(m,b,graficar,estilo):
             print(traceback.format_exc())
         else:
             print("No se pueden realizar la operación.")
-
+            
 ##############################################################
 # InteractDosPuntos
 # Función que maneja el interact para hallar la ecuación de
@@ -721,7 +722,7 @@ def InteractDosPuntos(p1,p2,graficar,estilo):
             print(traceback.format_exc())
         else:
             print("No se pueden realizar la operación.")
-
+            
 ##############################################################
 # InteractEvalExp
 # Función que maneja el interact para evaluar una expresión
@@ -773,7 +774,7 @@ def InteractFactorial(n):
             print(traceback.format_exc())
         else:
             print("No se puede calcular el factorial.")
-
+                        
 ##############################################################
 # InteractIneq
 # Función que maneja el interact para graficar inecuaciones
@@ -802,7 +803,7 @@ def InteractIneq(funcion, graficar, estilo):
             print(traceback.format_exc())
         else:
             print("No se puede graficar.")
-
+            
 ##############################################################
 # InteractExpan
 # Función que maneja el interact para expandir un binomio.
@@ -878,7 +879,7 @@ def InteractMCD(num1,num2):
             print(traceback.format_exc())
         else:
             print("No se puede calcular el valor.")
-
+            
 ##############################################################
 # InteractDerivParc
 # Función que maneja el interact para calcular las derivadas
@@ -929,7 +930,7 @@ def InteractDerivParc(funcion,df):
             print(traceback.format_exc())
         else:
             print("No se puede graficar.")
-
+        
 ##############################################################
 # InteractGrafica3D
 # Función que maneja el interact para hallar la grafica 3D
@@ -965,7 +966,7 @@ def InteractGrafica3D(funcion):
             print(traceback.format_exc())
         else:
             print("No se puede realizar la operación")
-
+            
 ##############################################################
 # InteractCoordPol
 # Función que maneja el interact para graficar funciones en 
@@ -1005,7 +1006,7 @@ def InteractCoordPol(r):
             print(traceback.format_exc())
         else:
             print("No se puede realizar la operación")
-
+            
 ##############################################################
 # InteractInt2Def
 # Función que maneja el interact para resolver integrales  
@@ -1041,7 +1042,7 @@ def InteractInt2Def(funcion,variable1,inferior,superior,variable_2,inferior_2,su
             print(traceback.format_exc())
         else:
             print("No se puede realizar la operación")
-
+        
 ##############################################################
 # InteractInt2Def
 # Función que maneja el interact para resolver integrales  
@@ -1111,7 +1112,7 @@ def InteractInt3Def(funcion,variable_1, inferior,superior,variable_2,inferior_2,
             print(traceback.format_exc())
         else:
             print("No se puede realizar la operación")
-
+    
 ##############################################################
 # InteractInt3Ind
 # Función que maneja el interact para resolver integrales  
@@ -1161,7 +1162,7 @@ def InteractLagrange(f, ecu):
             print(traceback.format_exc())
         else:
             print("No se puede realizar la operación")
-
+    
 ##############################################################
 # InteractDiagDisp
 # Función que maneja el interact para graficar el diagrama
@@ -1192,7 +1193,7 @@ def InteractDiagDisp (lista1,lista2):
             print(traceback.format_exc())
         else:
             print("No se puede realizar la operación")
-
+            
 ##############################################################
 # InteractPromedio
 # Función que maneja el interact para calcular el promedio.
@@ -1265,7 +1266,7 @@ def InteractModa (lista1):
             print(traceback.format_exc())
         else:
             print("No se puede realizar la operación")
-
+                        
 ##############################################################
 # CalculoOperacion
 # Función que recibe la operación a realizar
@@ -1398,7 +1399,7 @@ def ALOperacion(operacion):
             print(traceback.format_exc())
         else:
             print("No se puede realizar la operación")
-
+        
 ##############################################################
 # MBOperacion
 # Función que recibe la operación a realizar
@@ -1542,7 +1543,7 @@ def StatsOperacion(operacion):
             print(traceback.format_exc())
         else:
             print("No se puede realizar la operación")
-
+            
 ##############################################################
 # CVOperacion
 # Función que recibe la operación a realizar
@@ -1595,7 +1596,7 @@ def CVOperacion(operacion):
             print(traceback.format_exc())
         else:
             print("No se puede realizar la operación")
-
+                    
 ##############################################################
 # PresentarInterfaz
 # Función que construye la interfaz de usuario y la presenta
@@ -1700,7 +1701,7 @@ def dep_or_ind(matriz):
             print(traceback.format_exc())
         else:
             print("No se puede realizar la operación")
-
+            
 ##############################################################
 # Clase ParOrdenado
 # Objeto para almacenar pares ordenados
