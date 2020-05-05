@@ -23,10 +23,6 @@ Esta es una calculadora de funciones que le permitirá realizar operaciones de M
   Ingrese las listas de datos numÃ©ricos separadas por coma
   Por ejemplo lista1 = 1,2,3,4,5.
 
-<style type='text/css'>
-a { text-decoration: none; }
-a:hover { text-decoration: underline; }
-</style>
 Documentación API
 <h2 class="groupheader">Documentación de las funciones</h2>
 <a class="anchor" id="a0b41ab02d5d540c5e51b4b56e5d4cba0"></a>
